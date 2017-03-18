@@ -1,0 +1,161 @@
+body { font: normal normal 12px/16px arial, verdana; color: #666; }
+h1 { margin: 0; padding: 0 0 16px 0; font: normal bold 24px/32px arial, verdana; }
+h2 { margin: 0; padding: 16px 0 16px 0; font: normal bold 18px/24px arial, verdana; }
+#example1.lof-slidecontent, #example1.lof-slidecontent a { color:#FFF; }
+#example1.lof-slidecontent a.readmore { color:#58B1EA; font-size:95%; }
+#example1.lof-slidecontent { position:relative; overflow:hidden;}
+#example1.lof-slidecontent .preload { height:100%; width:100%; position:absolute; top:0; left:0; z-index:100000; text-align:center; background:#FFF }
+#example1.lof-slidecontent .preload div { height:100%; width:100%; background:transparent url(../images/load-indicator.gif) no-repeat scroll 50% 50%; }
+#example1 .lof-main-outer { position:relative; height:100%; width:900px; z-index:3px; overflow:hidden; }
+#example1 .lof-main-item-desc { z-index:100px; position:absolute; bottom:50px; left:0px; width:350px; background:url(../images/bg_trans.png); height:100px; padding:10px; }
+#example1 .lof-main-item-desc p { margin:0 8px; padding:8px 0; }
+#example1 .lof-main-item-desc h3 { padding:0; margin:0 }
+#example1 .lof-main-item-desc h2 { padding:0; margin:15px 0 0 0px; }
+#example1 .lof-main-item-desc h3 a { margin:0; background:#C01F25; font-size:75%; padding:2px 3px; font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,sans-serif; text-transform:uppercase; text-decoration:none; }
+#example1 .lof-main-item-desc h3 a:hover { text-decoration:underline; }
+#example1 .lof-main-item-desc h3 i { font-size:70%; }
+#example1 ul.lof-main-wapper { overflow:hidden; background:transparent url(../images/load-indicator.gif) no-repeat scroll 50% 50%; padding:0px; margin:0; position:absolute; overflow:hidden; }
+#example1 ul.lof-main-wapper li { overflow:hidden; padding:0px; margin:0px; float:left; position:relative; }
+#example1 .lof-opacity  li { position:absolute; top:0; left:0; float:inherit; }
+#example1 ul.lof-main-wapper li img { padding:0px; }
+#example1 .lof-navigator-wapper { position:absolute; bottom:10px; right:10px; background:url(../images/transparent_bg.png) repeat; padding:5px 0px; }
+#example1 .lof-navigator-outer { position:relative; z-index:100; height:180px; width:310px; overflow:hidden; color:#FFF; float:left; }
+#example1 ul.lof-navigator { top:0; padding:0; margin:0; position:absolute; width:100%; }
+#example1 ul.lof-navigator li { cursor:hand; cursor:pointer; list-style:none; padding:0; margin-left:0px; overflow:hidden; float:left; display:block; text-align:center; }
+#example1 ul.lof-navigator li img { border:#666 solid 3px; }
+#example1 ul.lof-navigator li.active img, ul.lof-navigator li:hover img { border:#A8A8A8 solid 3px; }
+#example1 .lof-navigator-wapper .lof-next,  .lof-navigator-wapper .lof-previous { display:block; width:22px; height:30px; color:#FFF; cursor:pointer; }
+#example1 .lof-navigator-wapper .lof-next { float:left; text-indent:-999px; margin-right:5px; background:url(../images/arrow-l.png) no-repeat right center; }
+#example1 .lof-navigator-wapper .lof-previous { float:left; text-indent:-999px; margin-left:5px; background:url(../images/arrow-r.png) no-repeat left center; }
+#example1 .lof-main-wapper h2 { color: #fff; font: normal bold 18px/24px arial, verdana; border: none; }
+
+
+#example1 .lof-navigator-wapper {
+  background: none;
+}
+
+#example1 .lof-navigator-wapper {
+  left: 0px;
+}
+
+
+#example1 ul.lof-navigator li img {
+  border: white solid 0px;
+  float: left;
+}
+
+#example1 ul.lof-navigator li img {
+  border: 0px;
+}
+
+#example1 ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
+  border: 0px;
+  outline: 1px solid #666;
+  outline-offset: -1px;
+}
+
+.lof-next,
+.lof-previous,
+.btn-next,
+.btn-previous {
+  cursor: pointer;
+  position: absolute;
+}
+
+.btn-next {
+  top: 200px;
+  left: 463px;
+}
+
+.btn-next:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-width: 1px 1px 0px 0px;
+  border-color: #999999;
+  border-style: solid;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.btn-previous {
+  top: 200px;
+  left: 3px;
+}
+
+.btn-previous:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-width: 0px 0px 1px 1px;
+  border-color: #999999;
+  border-style: solid;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.lof-next {
+  top: 555px;
+  left: 466px;
+}
+
+.lof-next:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-width: 1px 1px 0px 0px;
+  border-color: #999999;
+  border-style: solid;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.lof-previous {
+  top: 555px;
+  left: 9px;
+}
+
+.lof-previous:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-width: 0px 0px 1px 1px;
+  border-color: #999999;
+  border-style: solid;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  cursor: pointer;
+}
+
+#example1 .lof-main-outer { 
+  margin: 0px;
+}
+
+#example1 .btn-next {
+  top: 200px;
+  right: 10px;
+}
+
+#example1 .btn-previous {
+  top: 200px;
+  left: 10px;
+}
